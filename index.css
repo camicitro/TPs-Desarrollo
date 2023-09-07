@@ -1,0 +1,48 @@
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+    --amarillo-claro: #FFF26E;
+    --amarillo-oscuro: #FFE800;
+    --boton: #0C4D58;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Scada', sans-serif;
+}
+body{
+    background-color: #fff;
+}
+/*navbar*/
+.logo-limon {
+    width: 48px;
+    margin: 16px;
+}
+.titulo{
+    font-weight: 600;
+}
+.navbar-expand-lg {
+    background-color: var(--amarillo-claro);
+    margin: 0;
+    padding: 0;
+}
+.container-fluid{
+    background-color: var(--amarillo-claro);
+}
+/*tarjetas*/
+.contenedor-tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 32px;
+    margin: 32px;
+}
+.btn, .btn-primary, btn-info {
+    color: #fff;
+}
