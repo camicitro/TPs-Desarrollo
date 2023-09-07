@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Scada:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --amarillo-claro: #FFF26E;
+    --amarillo-oscuro: #FFE800;
+    --boton: #0C4D58;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Scada', sans-serif;
+}
+body{
+    background-color: #fff;
+}
+
+/*NAVBAR*/
+.navbar{
+    background-color: var(--amarillo-claro);
+    display: flex;
+    align-items: center;
+}
+.logo-limon {
+    width: 48px;
+    margin: 16px;
+}
+.titulo-limon{
+    text-decoration: none;
+    color: #000;
+    font-size: 32px;
+
+}
+/*BODY*/
+.tarjeta {
+    width: 18rem;
+}
+.tarjeta-img{
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+.contenedor-tarjetas{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin: 32px;
+    justify-content: center;
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    border: 1px solid #7e7c7c;
+    border-radius: 16px;
+    
+
+}
+.cuerpo-tarjeta{
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.titulo-tarjeta{
+    font-size: 1.5rem;
+}
+.btn-tarjeta{
+    text-decoration: none;
+    color: #000;
+    background-color: #ffc400;
+    max-width: fit-content;
+    padding: 8px 16px;
+    border: 1px solid #ffc400;
+    border-radius: 8px;
+}
+.btn-tarjeta:hover{
+    background-color: #d8ac1c;
+}
+
+/*celular*/
+@media (max-width:414px){
+    .contenedor-tarjetas{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
